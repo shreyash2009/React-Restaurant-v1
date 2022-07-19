@@ -1,0 +1,253 @@
+#reviewSliderContainer{
+    position: relative;
+    top: 5rem;
+}
+#reviewSliderContainer .reviewheading{
+    text-align: center;
+    font-size: 2.8em;
+    font-family: 'Bebas Neue', cursive;
+    color: #54301a;
+    letter-spacing: 3px;
+}
+.underline{
+    height: 0.5em;
+    width: 6em;
+    margin: auto;
+    background-color: black;
+    border-radius: 20%;
+    margin-bottom: 6px;
+}
+.SliderContainer{
+    margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.personImg{
+    border-radius: 50%;
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid hsl(210, 31%, 80%);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.icon {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: orange;
+  }
+#person_review{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    transition: all o.9s linear;
+  }
+  article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  article.lastSlide {
+    transform: translateX(-100%);
+  }
+  article.nextSlide {
+    transform: translateX(100%);
+  }
+  .btn_container{
+    background-color: rgba(0, 255, 255, 0);
+    width: 100%;
+    position: relative;
+    top: 56%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+  }
+  .next,.prev{
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: skyblue;
+    border: none;
+  }
+
+
+
+
+
+  /* Live reviwws */
+  #LiveReview{
+    background-color: skyblue;
+  }
+  #LiveReview h3{
+    text-align: center;
+    font-size: 2.8em;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1.2em;
+    color: #fffdfc;
+    letter-spacing: 3px;
+    border-bottom: 3px yellow solid;
+    text-shadow: 1px 2px 3px grey;
+    padding: 5px 0;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .container .showfield{
+    padding:1.5rem ;
+    width: 60%;
+    height: 70%;
+    /* background-color: #54301a; */
+  }
+  .showfield .LiveList{
+    list-style: none;
+  }
+  .showfield .LiveList .LiveListElem{
+    list-style: none;
+   
+    overflow: hidden;
+  }
+  .showfield .LiveList .LiveListElem .Live_review{
+    margin: 8px;
+  }
+  .personName{
+    color: rgb(255, 255, 2);
+    font-size: medium;
+    text-shadow: 0px 1px 1px grey;
+
+  }
+  .personReview{
+    color: rgb(149, 88, 13);
+    font-size: 0.8rem;
+    text-shadow: 1px 0px 1px grey;
+
+  }
+
+
+  /* inputfield */
+  .inputfield{
+    margin: auto;
+    background-color: rgb(160, 213, 234);
+    width:30%;
+    border-radius: 30px;
+  }
+  .inputfield h4{
+    font-size: larger;
+    text-shadow: 1px 2px 2px grey;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    }
+
+.inputfield form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1.2rem;
+}
+.inputfield form label{
+    font-weight: bold;
+}
+#reviewName,#reviewComment{
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-family: sans-serif;
+    overflow:auto;
+    font-size: 19px;
+}
+#reviewName,#reviewComment:focus{
+outline: none;
+
+}
+.inputfield form button{
+    width: 60%;
+    margin: auto;
+    background: lavender;
+    padding: 5px 0;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border: none;
+}
+.inputfield form button:hover{
+    background-color: gold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px grey;
+}
+
+
+@media(max-width: 1020px){
+  .container{
+    flex-direction: column;
+  }
+  .inputfield{
+    margin: auto;
+    width:70%;
+    border-radius: 30px;
+  }
+  .container .showfield{
+    padding:1.5rem ;
+    width: 100%;
+    height: 70%;
+    /* background-color: #54301a; */
+  }
+  #reviewName,#reviewComment{
+    margin-left: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    border: none;
+    font-family: sans-serif;
+    overflow:auto;
+    font-size: 12px;
+  }
+  .inputfield form button{
+    width: 10rem;
+    padding: 5px 0;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border: none;
+  }
+  .inputfield form label{
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.inputfield form .textarea{
+  font-size: 0.7rem;
+
+}
+}
+@media(max-width:413px){
+  .inputfield{
+    margin: auto;
+    width:100%;
+    border-radius: 0;
+  }
+  .container .showfield{
+    padding:1.5rem ;
+    width: 100%;
+    height: 70%;
+  }
+  .inputfield h4{
+    font-size: medium;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    }
+}
