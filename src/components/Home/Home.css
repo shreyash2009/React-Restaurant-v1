@@ -6,7 +6,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.83;
 }
 .Videotext .downArrow{
     transform: rotate(0.5turn);
@@ -138,7 +138,6 @@
 }
 .Service_card{
     width: 25rem;
-    padding: 10px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -146,26 +145,31 @@
     border-radius: 40px;
     box-shadow: 2px 2px  3px 2px grey;
     min-width: 23rem;
+    transition: all 0.3s ease;
 }
 
 .Service_card:hover{
-    transform: translate(-1%,-1%);
+    transform: translate(-0.1%,-0.1%);
     box-shadow: -2px -2px  3px 2px grey;
 }
 
 .Service_card .Ser_img{
-    width: 95%;
-    height: 16rem;
-    margin: auto;
+    width: 100%;
+    height: 19rem;
+    overflow: hidden;
 }
 .Service_card .Ser_img img:hover{
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
     overflow: hidden;
 }
 .Service_card .Ser_img img{
+    object-fit:fill;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 40px 40px 0 0;
+
+    transition: all 0.2s ease-in;
+    overflow: hidden;
 }
 .Service_card .Service_info{
     padding-bottom: 10px;
