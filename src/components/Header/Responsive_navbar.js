@@ -8,7 +8,7 @@ const Responsive_navbar = ({RemoveShowMenu}) => {
     <div className='res_nav'>
 
         <ul className='Res_Navlinks'>
-        <li onClick={RemoveShowMenu}><Link exact to="/"><ImCross/></Link></li>
+        <li onClick={RemoveShowMenu}><ImCross/></li>
               <li><Link exact  to="/">Home</Link></li>
               <li><Link exact  to="/menu">Menu</Link></li>
               <li><Link exact  to="/about">About</Link></li>
