@@ -107,6 +107,8 @@ padding: 1.2rem 10rem;
     min-width: 18rem;
     box-shadow: 2px 2px 3px 1px rgb(194, 192, 192);
     border-radius: 12px;
+    align-items: center;
+    overflow: hidden;
  }
  .menu-item button{
     background-color:#54301aa7;
@@ -119,10 +121,10 @@ padding: 1.2rem 10rem;
     margin-top: 0.2rem;
 }
  .photo{
-    object-fit: fill;
-    width: 100%;
+    object-fit: cover;
+    width: 50%;
     display: block;
-    height: 200px;
+    height:100%;
     border-radius: 12px 0 0 12px;
  }
  .item-info{
@@ -172,6 +174,13 @@ padding: 1.2rem 0;
     } */
     .menu-item{
         flex-direction: column;
-        width: 60rem;
+        width: 30rem;
     }
+    .photo{
+        object-fit: cover;
+        width: 100%;
+        display: block;
+        height:100%;
+        border-radius: 12px 0 0 0;
+     }
 }

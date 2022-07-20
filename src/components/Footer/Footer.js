@@ -38,8 +38,8 @@ const Footer = () => {
                   <h4>Follow Us</h4>
                   <div class = "Social-Links">
                       <a href = "https://github.com/shreyash2009" target="_blank" rel="noreferrer"><SiGithub/></a>
-                      <a href = "https://github.com/shreyash2009" target="_blank" rel="noreferrer"><SiLinkedin/></a>
-                      <a href = "https://github.com/shreyash2009" target="_blank" rel="noreferrer"><SiInstagram/></a>
+                      <a href = "https://www.linkedin.com/in/shreyash-chaple-2b45aa213/" target="_blank" rel="noreferrer"><SiLinkedin/></a>
+                      <a href = "https://www.instagram.com/shreyash_20.09/" target="_blank" rel="noreferrer"><SiInstagram/></a>
                   </div>
               </div>
           </div>
