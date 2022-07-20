@@ -91,6 +91,8 @@
 #MenuHighlight .Highlight_container .HighlightCard .info{
     margin: 0 0 2em 2em;
     padding: 1.2em;
+    background-color: rgba(79, 79, 79, 0.553);
+    border-radius: 9px;
 }
 #MenuHighlight .Highlight_container .HighlightCard .info h4{
     color: white;
@@ -173,6 +175,7 @@
 }
 .Service_card .Service_info{
     padding-bottom: 10px;
+    padding: 0 6px 6px 0;
     text-align: center;
 }
 .Service_card .Service_info h3{
